@@ -9,7 +9,7 @@ while True:
         print(f"Простых чисел: {prime}")
         print(f"Составных чисел: {composite}")
         break
-    if n == int(n):
+    if n == int(n) and n > 0:
         if n == 1:
             continue
         is_prime = 1
