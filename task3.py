@@ -4,12 +4,12 @@
 prime = 0
 composite = 0
 while True:
-    n = float(input())
+    n = int(input())
     if n == 0:
         print(f"Простых чисел: {prime}")
         print(f"Составных чисел: {composite}")
         break
-    if n == int(n) and n > 0:
+    if n > 0:
         if n == 1:
             continue
         is_prime = 1
