@@ -4,7 +4,7 @@
 two_digit = 0
 other = 0
 while True:
-    n = float(input())
+    n = int(input())
     if n == 0:
         print(f"Двузначных чисел: {two_digit}")
         print(f"Других чисел: {other}")
