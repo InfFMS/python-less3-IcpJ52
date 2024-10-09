@@ -4,7 +4,7 @@
 neg = 0
 pos = 0
 while True:
-    n = float(input())
+    n = int(input())
     if n == 0:
         print(f"Положительных чисел: {pos}")
         print(f"Отрицательных чисел: {neg}")
