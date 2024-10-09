@@ -4,4 +4,14 @@
 # Числа Фибоначчи – это последовательность чисел,
 # которая начинается с двух единиц и каждое следующее число
 # равно сумме двух предыдущих: 1, 1, 2, 3, 5, 8, 13, …
-
+fib_lst = [1, 1]
+for i in range(50):
+    fib_lst.append(fib_lst[-1] + fib_lst[-2])
+min_fib = 2 * 10 ** 9
+while True:
+    n = int(input())
+    if n == 0:
+        print('нет' if min_fib == 2 * 10 ** 9 else f"Минимальное число Фибоначчи: {min_fib}")
+        break
+    if n in fib_lst:
+        min_fib = min(min_fib, n)
